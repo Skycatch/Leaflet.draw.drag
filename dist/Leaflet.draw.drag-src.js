@@ -641,9 +641,11 @@ L.Edit.Circle.include( /** @lends L.Edit.Circle.prototype */ {
    * @override
    */
   removeHooks: function() {
-    if (this._shape._map) {
-      for (var i = 0, l = this._resizeMarkers.length; i < l; i++) {
-        this._unbindMarker(this._resizeMarkers[i]);
+    if (this._shape._map && this._map) {
+      if (this._resizeMarkers) {
+        for (var i = 0, l = this._resizeMarkers.length; i < l; i++) {
+          this._unbindMarker(this._resizeMarkers[i]);
+        }
       }
 
       this._disableDragging();
