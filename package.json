@@ -24,8 +24,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "leaflet": "^0.7.3",
-    "leaflet-draw": "https://github.com/michaelguild13/Leaflet.draw.git#master",
+    "leaflet": "0.7.3",
+    "leaflet-draw": "0.3.2",
     "leaflet-path-drag": "^0.1.11"
   },
   "devDependencies": {
