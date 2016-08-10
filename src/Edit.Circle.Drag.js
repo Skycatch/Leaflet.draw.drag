@@ -12,6 +12,7 @@ L.Edit.Circle.include( /** @lends L.Edit.Circle.prototype */ {
       this._map = this._shape._map;
       if (!this._markerGroup) {
         this._enableDragging();
+        console.log(this);
         this._initMarkers();
       }
       this._shape._map.addLayer(this._markerGroup);

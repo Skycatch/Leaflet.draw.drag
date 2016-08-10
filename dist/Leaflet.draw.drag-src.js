@@ -631,6 +631,7 @@ L.Edit.Circle.include( /** @lends L.Edit.Circle.prototype */ {
       this._map = this._shape._map;
       if (!this._markerGroup) {
         this._enableDragging();
+        console.log(this);
         this._initMarkers();
       }
       this._shape._map.addLayer(this._markerGroup);
@@ -857,7 +858,10 @@ L.Edit.Poly.include( /** @lends L.Edit.Poly.prototype */ {
   addHooks: function() {
     if (this._poly._map) {
       if (!this._markerGroup) {
+        console.log(this);
+
         this._enableDragging();
+
         this._initMarkers();
         // Create center marker
         this._createMoveMarker();
